@@ -3,7 +3,8 @@ body{
 }
 .top{
     text-align: center;
-    margin-block-end: 2em;
+    margin-top: 0;
+    margin-bottom: 2em;
     background-color: gray;
     background-size: cover;
     height: 10em;
@@ -15,11 +16,23 @@ body{
 .container{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-gap: 20px;
-    padding-left: 4em;
-    padding-right: 4em;
+    grid-gap: 1em;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .blogs,.updates{
     border: 2pt solid black;
+}
+
+@media only screen and (max-width: 768px){
+    .top{
+        margin-bottom: 1em;
+    }
+    .container{
+        display: inline;
+    }
+    .blogs,.updates{
+        margin: 2vw;
+    }
 }
