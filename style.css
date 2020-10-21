@@ -12,6 +12,9 @@ body{
 }
 .top a h1{
     margin : 0;
+    text-decoration: none;
+    color: white;
+    padding-top: 2em;
 }
 .container{
     display: grid;
