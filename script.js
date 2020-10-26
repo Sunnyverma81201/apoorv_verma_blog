@@ -1,7 +1,1 @@
-class Post{
-    constructor(title,dateTime,data){
-        this.title = title;
-        this.dateTime = dateTime;
-        this.data = data;
-    }
-}
+document.getElementsByClassName("post_timing").innerHTML = new Date();
